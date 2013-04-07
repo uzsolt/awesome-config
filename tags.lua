@@ -36,7 +36,7 @@ tag_list = {
             icon="/usr/share/icons/AwOkenWhite/clear/128x128/apps/libreoffice-base.png" },
     devel = 
         { name = "devel",     hotkey = "v",   layout = awful.layout.suit.max,        comment="Program developing", 
-            icon=icondir .. "categories/clear/applications-development.png"         },
+            icon= DIRS["home"] .. "/icons/geek-zombie-icon.png"         },
     pld =
         { name = "pld",     hotkey = "l",   layout = awful.layout.suit.magnifier,   comment="PLD developing", icon="hacker-mini.png"},
     arch =
