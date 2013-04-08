@@ -4,7 +4,6 @@ tag_list = {
             icon = DIRS["home"] .. "/icons/terminal.png" },
     web = 
         { name = "web",     hotkey = "w",   layout = awful.layout.suit.max,         comment="Web browser",
-            --icon = "/usr/share/icons/AwOken/clear/128x128/apps/web-browser.png"
             icon = DIRS["home"] .. "/icons/firefox.png"
         },
     rss =
