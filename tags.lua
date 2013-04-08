@@ -29,10 +29,10 @@ tag_list = {
             icon=icondir .. "categories/package_games.png"},
     dox = 
         { name = "dox",     hotkey = "d",   layout = awful.layout.suit.tile.left,   comment="LaTeX, OpenOffice", 
-            icon= icondir .. "emblems/emblem-documents.png",mwfact=0.5},
+            icon= DIRS["home"] .. "/icons/dox.png",mwfact=0.5},
     libreoffice =
         { name= "libreoffice", hotkey="c", layout = awful.layout.suit.tile.right,   comment="LibreOffice suites", 
-            icon="/usr/share/icons/AwOkenWhite/clear/128x128/apps/libreoffice-base.png" },
+            icon= DIRS["home"] .. "/icons/libreoffice.png" },
     devel = 
         { name = "devel",     hotkey = "v",   layout = awful.layout.suit.max,        comment="Program developing", 
             icon= DIRS["home"] .. "/icons/geek-zombie-icon.png"         },
