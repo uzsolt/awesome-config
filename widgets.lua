@@ -176,16 +176,7 @@ iconbox_data = {
         image = ib_Image(icondir .. "apps/gmail.png")
     },
     ["time"] = {
-        image = ib_Image(icondir .. "apps/time.png")
-    },
-    ["mount1"] = {
-        image = ib_Image(image_not_mounted)
-    },
-    ["mount2"] = {
-        image = ib_Image(image_not_mounted)
-    },
-    ["mount3"] = {
-        image = ib_Image(image_not_mounted)
+        image = ib_Image(DIRS["home"] .. "/icons/iconboxes/clock.png")
     },
     ["top"] = {
         image = ib_Image("/usr/share/icons/AwOken/clear/24x24/" .. "apps/htop.png")
