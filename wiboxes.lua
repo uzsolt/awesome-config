@@ -30,9 +30,9 @@ for i=2,3 do
     sublayouts["cpu"]:add(sublayouts["cpu" .. i])
 end
 
-sublayouts["tag_task_list"] = wibox.layout.flex.horizontal()--fixed.vertical()
---sublayouts["tag_task_list"]:add(mytasklist)
+sublayouts["tag_task_list"] = wibox.layout.fixed.horizontal()
 sublayouts["tag_task_list"]:add(mytaglist)
+sublayouts["tag_task_list"]:add(space)
 
 sublayouts["net"] = wibox.layout.flex.vertical()
 sublayouts["net_up"] = wibox.layout.fixed.horizontal()
