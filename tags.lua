@@ -17,10 +17,10 @@ tag_list = {
             icon= DIRS["home"] .. "/icons/torrent.png"   },
     utils =
         { name = "utils",   hotkey = "u",   layout = awful.layout.suit.tile,        comment="Other utilities", 
-            icon="/usr/share/icons/AwOken/clear/128x128/apps/icoutils.png"  },
+            icon= DIRS["home"] .. "/icons/tools.png"  },
     burn = 
         { name = "burn",    hotkey = "n",   layout = awful.layout.suit.max,         comment="Burning", 
-            icon="/usr/share/icons/AwOken/clear/128x128/apps/burner.png"  },
+            icon= DIRS["home"] .. "/icons/dvd-burn.png"  },
     graphics = 
         { name = "graphics",hotkey = "g",   layout = awful.layout.suit.float,        comment="Graphics utilities", 
             icon="/usr/share/icons/AwOken/clear/128x128/categories/package_graphics.png"},
@@ -51,8 +51,11 @@ tag_list = {
 
 tags = {}
 for i,xtag in pairs(tag_list) do
-    xtag["icon_only"] = true
-    tags[i] = awful.tag.add(xtag.name,xtag)
+    tags[i] = awful.tag.add(xtag.name,{
+        icon_only   =   true,
+        layout      =   xtag.layout,
+        icon        =   xtag.icon
+    })
 end
 
 function get_tag_by_name(des_tag)
