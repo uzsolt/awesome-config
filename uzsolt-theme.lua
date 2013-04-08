@@ -24,14 +24,11 @@ theme = {
 
     tooltip_bg_color = "#000000bb",
 
-	--taglist_squares_sel = DIRS["theme"]["taglist"] .. "squarefw.png",
-	--taglist_squares_unsel = DIRS["theme"]["taglist"] .. "squarew.png",
+    taglist_bg_focus = "#55555599",
 
 	tasklist_floating_icon = DIRS["theme"]["tasklist"] .. "floatingw.png",
 
-	--titlebar_close_button_normal = DIRS["theme"]["titlebar"] .. "close_normal.png",
     titlebar_close_button_normal = "/usr/share/icons/AwOkenWhite/clear/24x24/apps/wincloser16.png",
-	--titlebar_close_button_focus = DIRS["theme"]["titlebar"] .. "close_focus.png",
     titlebar_close_button_focus ="/usr/share/icons/AwOkenWhite/clear/24x24/apps/wincloser16.png", 
 
 	menu_submenu_icon = "/usr/share/awesome/themes/default/submenu.png",
@@ -46,7 +43,6 @@ theme = {
 
 
 	awesome_icon           = "/usr/share/awesome/themes/sky/awesome-icon.png",
-    --wallpaper = "/home/users/zsolt/kepek/kismano/2011-08-06-greece-zakynthos/dscf3303.jpg"
     wallpaper = "/home/users/zsolt/kepek/kismano/2012-08-09-montenegro-denovici/DSCF3941.JPG"
 
 }
