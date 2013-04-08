@@ -167,7 +167,6 @@ ownfiles = {
     "wiboxes",
     --"uzsolt-mpd",
     "timers",
-    "mount_events",
     "vicious-widgets",
     "mpdcron",
 }
