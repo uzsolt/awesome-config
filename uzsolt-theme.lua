@@ -75,37 +75,3 @@ theme.wallpaper_cmd = { "feh --bg-fill " .. theme.wallpaper }
 
 return theme
 
-    --[[
-	titlebar_ontop_button_normal_inactive = DIRS["theme"]["titlebar"] .. "ontop_normal_inactive.png",
-	titlebar_ontop_button_focus_inactive = DIRS["theme"]["titlebar"] .. "ontop_focus_inactive.png",
-	titlebar_ontop_button_normal_active = DIRS["theme"]["titlebar"] .. "ontop_normal_active.png",
-	titlebar_ontop_button_focus_active = DIRS["theme"]["titlebar"] .. "ontop_focus_active.png",
-
-	titlebar_sticky_button_normal_inactive = DIRS["theme"]["titlebar"] .. "sticky_normal_inactive.png",
-	titlebar_sticky_button_focus_inactive = DIRS["theme"]["titlebar"] .. "sticky_focus_inactive.png",
-	titlebar_sticky_button_normal_active = DIRS["theme"]["titlebar"] .. "sticky_normal_active.png",
-	titlebar_sticky_button_focus_active = DIRS["theme"]["titlebar"] .. "sticky_focus_active.png",
-
-	titlebar_floating_button_normal_inactive = DIRS["theme"]["titlebar"] .. "floating_normal_inactive.png",
-	titlebar_floating_button_focus_inactive = DIRS["theme"]["titlebar"] .. "floating_focus_inactive.png",
-	titlebar_floating_button_normal_active = DIRS["theme"]["titlebar"] .. "floating_normal_active.png",
-	titlebar_floating_button_focus_active = DIRS["theme"]["titlebar"] .. "floating_focus_active.png",
-
-	titlebar_maximized_button_normal_inactive = DIRS["theme"]["titlebar"] .. "maximized_normal_inactive.png",
-	titlebar_maximized_button_focus_inactive = DIRS["theme"]["titlebar"] .. "maximized_focus_inactive.png",
-	titlebar_maximized_button_normal_active = DIRS["theme"]["titlebar"] .. "maximized_normal_active.png",
-	titlebar_maximized_button_focus_active = DIRS["theme"]["titlebar"] .. "maximized_focus_active.png",
-    ]]
-
-    --[[
-	layout_fairh = DIRS["theme"]["layouts"] .. "fairhw.png",
-	layout_fairv = DIRS["theme"]["layouts"] .. "fairvw.png",
-	layout_floating = DIRS["theme"]["layouts"] .. "floatingw.png",
-	layout_magnifier = DIRS["theme"]["layouts"] .. "magnifierw.png",
-	layout_max = DIRS["theme"]["layouts"] .. "maxw.png",
-	layout_fullscreen = DIRS["theme"]["layouts"] .. "fullscreenw.png",
-	layout_tilebottom = DIRS["theme"]["layouts"] .. "tilebottomw.png",
-	layout_tileleft = DIRS["theme"]["layouts"] .. "tileleftw.png",
-	layout_tile = DIRS["theme"]["layouts"] .. "tilew.png",
-	layout_tiletop = DIRS["theme"]["layouts"] .. "tiletopw.png",
-    ]]
