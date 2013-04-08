@@ -90,8 +90,9 @@ active_interface="wlan0"
         if (active_interface == "wlan0") then
             vicious.register(textboxes["wlan"],vicious.widgets.wifi,function (widget, args)
                 local link_percent = math.floor(args["{link}"]/70*100)
-                local img_percent = (math.floor(link_percent/20))*20
-                iconboxes["network"]:set_image("/usr/share/icons/AwOkenWhite/clear/128x128/apps/wifi-" .. string.format("%.3d",img_percent) .. ".png")
+                local img_percent = (math.floor((math.min(link_percent+25,100)/25)))*25
+                --iconboxes["network"]:set_image("/usr/share/icons/AwOkenWhite/clear/128x128/apps/wifi-" .. string.format("%.3d",img_percent) .. ".png")
+                iconboxes["network"]:set_image(DIRS["home"] .. "/icons/wifi/" .. string.format("%.3d",img_percent) .. ".png")
                 --GetImage("widgets/Devices-network-wireless-connected-" ..  img_percent .. "-icon.png")
                 return "<span color='lightgreen'>" .. args["{ssid}"] .. "</span> <span color='#666666'>(" .. link_percent .. "%)</span>"
             end,5,"wlan0")
