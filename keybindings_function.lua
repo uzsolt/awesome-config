@@ -20,7 +20,8 @@ function urxvt_options(fn,command)
         ["name"]        =   "-name",
         ["dir"]         =   "-cd",
         ["font"]        =   "-fn",
-        ["fontcolor"]   =   "-fg"
+        ["fontcolor"]   =   "-fg",
+        ["icon"]        =   "-icon"
     }
     local cjson = require "cjson"
     local opt = cjson.decode(f:read("*all")) f:close()
