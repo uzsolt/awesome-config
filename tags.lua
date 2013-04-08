@@ -12,7 +12,7 @@ tag_list = {
             icon="/usr/share/icons/AwOken/clear/128x128/apps/rss.png" },
     music = 
         { name = "music",   hotkey = "m",   layout = awful.layout.suit.max,         comment="Music player", 
-            icon=icondir .. "apps/musique.png"},
+            icon= DIRS["home"] .. "/icons/music-guitar.png"},
     torrent =
         { name = "torrent", hotkey = "t",   layout = awful.layout.suit.tile,        comment="Torrent client", 
             icon= DIRS["home"] .. "/icons/torrent.png"   },
@@ -41,7 +41,7 @@ tag_list = {
         { name = "pld",     hotkey = "l",   layout = awful.layout.suit.magnifier,   comment="PLD developing", icon="hacker-mini.png"},
     arch =
         { name = "arch",    hotkey = "a",   layout = awful.layout.suit.tile.right,         comment="Arch developing", 
-            icon="/usr/share/icons/AwOken/clear/128x128/apps/arch-logo.png"},
+            icon= DIRS["home"] .. "/icons/arch.png"},
     pdf = 
         { name = "pdf",     hotkey = "f",   layout = awful.layout.suit.max,         comment = "PDF documents", 
             icon= "/usr/share/icons/AwOkenWhite/clear/128x128/mimetypes/pdf.png"},
