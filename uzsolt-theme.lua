@@ -28,6 +28,9 @@ theme = {
 
 	tasklist_floating_icon = DIRS["theme"]["tasklist"] .. "floatingw.png",
 
+    tasklist_bg_normal = "#00330000",
+    tasklist_bg_focus  = "#003300ff",
+
     titlebar_close_button_normal = "/usr/share/icons/AwOkenWhite/clear/24x24/apps/wincloser16.png",
     titlebar_close_button_focus ="/usr/share/icons/AwOkenWhite/clear/24x24/apps/wincloser16.png", 
 
