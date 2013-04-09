@@ -129,7 +129,7 @@ end
 
 iconbox_data = {
     ["cpu"] = {
-        image = ib_Image(icondir .. "status/indicator-cpufreq.png")
+        image = DIRS["home"] .. "/icons/iconboxes/CPU-AMD-icon.png"
     },
     ["mem"] = {
         image = ib_Image("System-Memory-icon.png")
@@ -148,10 +148,10 @@ iconbox_data = {
         image = ib_Image("Wireless-icon.png")
     },
     ["net_down"] = {
-        image = ib_Image(icondir .. "/actions/go-down.png")
+        image = DIRS["home"] .. "/icons/iconboxes/download.png"
     },
     ["net_up"] = {
-        image = ib_Image(icondir .. "/actions/go-up.png")
+        image = DIRS["home"] .. "/icons/iconboxes/upload.png"
     },
     ["disk_usage"] = {
         image = ib_Image(icondir .. "/devices/drive-harddisk-root.png")
@@ -179,7 +179,7 @@ iconbox_data = {
         image = ib_Image(DIRS["home"] .. "/icons/iconboxes/clock.png")
     },
     ["top"] = {
-        image = ib_Image("/usr/share/icons/AwOken/clear/24x24/" .. "apps/htop.png")
+        image = DIRS["home"] .. "/icons/iconboxes/top.png"
     }
 }
 
