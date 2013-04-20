@@ -116,6 +116,14 @@ awful.rules.rules = {
     },
     {
         rule = {
+            instance = "Abp"
+        },
+        properties = {
+            floating = true
+        }
+    },
+    {
+        rule = {
             class = "Firefox",
             instance = "Dialog"
         },
