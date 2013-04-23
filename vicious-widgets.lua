@@ -122,7 +122,7 @@ for i=0,1 do
     vicious.register(textboxes["cpu" .. i .. "_freq"],vicious.widgets.cpuinf, function(widget,args)
         cpughz = args['{cpu' .. i ..' ghz}']
         color = (cpughz>2) and "lightgreen" or "yellow"
-        return '<span color="' .. color .. '"> ' .. cpughz .. ' GHz</span>'
+        return '<span color="' .. color .. '"> ' .. string.format("%.2f",cpughz) .. ' GHz</span>'
     end,5)
 end
 
