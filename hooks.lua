@@ -9,9 +9,19 @@ function hook_unmarked(c)
     c.border_color = beautiful.border_focus
 end
 
+function wibox_left_toggle()
+    local current_tag = awful.tag.selected()
+    if (#(current_tag:clients()) > 0) then
+        wiboxes["left"].visible = true
+    else
+        wiboxes["left"].visible = false
+    end
+end
+
 -- Hook function to execute when a new client appears.
 client.connect_signal("manage",function (c,startup)
 
+    wibox_left_toggle()
     if not startup then
         -- Set the windows at the slave,
         -- i.e. put it at the end of others instead of setting it master.
@@ -26,21 +36,19 @@ client.connect_signal("manage",function (c,startup)
 
 end)
 
+client.connect_signal("unmanage", function(c)
+    wibox_left_toggle()
+end)
+
 client.connect_signal("focus",function(c)
     c.opacity = 1
-    if ( c.class == "Worker" ) then
-        c.opacity = 1
-    end
-
+    wibox_left_toggle()
 end)
 
 client.connect_signal("unfocus",function(c)
     c.opacity = 0.8
-    if ( c.class == "Worker" ) then
-        --c.opacity = 0.5
-    end
+    wibox_left_toggle()
 end)
-
 
 -- Hook function to execute when arranging the screen
 -- (tag switch, new client, etc)
