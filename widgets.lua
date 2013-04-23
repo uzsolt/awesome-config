@@ -94,11 +94,11 @@ textbox_data = {
         width = 25,
     },
     ["cpu2"] = {
-        width = 25,
+        width = 30,
         align = "right",
     },
     ["cpu3"] = {
-        width = 25,
+        width = 30,
         align = "right",
     },
     ["cpu0_freq"] = {
@@ -260,8 +260,8 @@ graphs["net_up"]:set_background_color("#22222233")
 graphs["net_down"]:set_background_color("#00000033")
 
 textboxes["cpu1"].fit = function(widget,w,h) return 27,h end
-textboxes["cpu2"].fit = function(widget,w,h) return 27,10 end
-textboxes["cpu3"].fit = function(widget,w,h) return 27,10 end
+textboxes["cpu2"].fit = function(widget,w,h) return 30,10 end
+textboxes["cpu3"].fit = function(widget,w,h) return 30,10 end
 textboxes["cpu0_freq"].fit = function(widget,w,h) return 55,h end
 textboxes["cpu1_freq"].fit = function(widget,w,h) return 55,h end
 textboxes["net_down"].fit = function(widget,w,h) return 27,10 end
