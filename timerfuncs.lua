@@ -111,8 +111,14 @@ function hook_gmail()
     check_alert()
 end
 
+mount_points = { "/","/home","/home/downloads","/var",--[["/home/irando",]]"/backup"}
 function fs_usage(ret)
-    local f = io.popen("LC_ALL=C /bin/df -m")
+    local mp = ""
+    local i
+    for _,i in ipairs(mount_points) do
+        mp = mp .. " " .. i
+    end
+    local f = io.popen("LC_ALL=C /bin/df -m " .. mp)
     -- skip the first line
     f:read("*line")
     ret = ret or {}
@@ -141,7 +147,6 @@ function hook_rss()
     check_alert()
 end
 
-mount_points = { "/","/home","/home/downloads","/var",--[["/home/irando",]]"/backup"}
 short_mount_points = {}
 
 for i=1,#mount_points do
