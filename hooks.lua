@@ -11,6 +11,9 @@ end
 
 function wibox_left_toggle()
     local current_tag = awful.tag.selected()
+    if (current_tag==nil) then
+        return
+    end
     if (#(current_tag:clients()) > 0) then
         wiboxes["left"].visible = true
     else
