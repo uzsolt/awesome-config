@@ -62,25 +62,6 @@ function get_tag_by_name(des_tag)
     return tags[des_tag]
 end
 
---[[
-tags_by_name = {}
-for i = 1,#tag_list do
-    tags[tag_list[i].name] = tags[i]
-end
-
-function get_tag_by_name(des_tag)
-    local i
-    for i = 1,#tag_list do
-        if tag_list[i].name == des_tag then return i
-        end
-    end
-    return -1
-end
-
-function get_tag_struct(des_tag)
-    return tags[get_tag_by_name(des_tag)]
-end
-]]
 tags["term"].selected = true
 
 
