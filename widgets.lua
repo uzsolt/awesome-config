@@ -136,8 +136,10 @@ iconbox_data = {
     },
     ["battery"] = {
     },
+    ["battery_charge"] = {
+    },
     ["arch"] = {
-        image = ib_Image(icondir .. "/apps/arch-logo.png")
+        image = ib_Image(DIRS["home"] .. "/icons/iconboxes/Arch_logo.png")
     },
     --[[
     ["mpd"] = {
@@ -157,7 +159,7 @@ iconbox_data = {
         image = ib_Image(icondir .. "/devices/drive-harddisk-root.png")
     },
     ["rss"] = {
-        image = ib_Image(icondir .. "apps/rss.png")
+        image = ib_Image(DIRS["home"] .. "/icons/iconboxes/RSS-icon.png")
     },
     --[[
     ["euro"] = {
@@ -173,7 +175,7 @@ iconbox_data = {
     },
     ]]
     ["gmail"] = {
-        image = ib_Image(icondir .. "apps/gmail.png")
+        image = DIRS["home"] .. "/icons/iconboxes/Gmail-icon.png"
     },
     ["time"] = {
         image = ib_Image(DIRS["home"] .. "/icons/iconboxes/clock.png")
