@@ -90,6 +90,7 @@ for _,i in ipairs({
     mysystray,
     iconboxes["mem"],
     textboxes["mem"],
+    iconboxes["battery_charge"],
     iconboxes["battery"],
     textboxes["battery"],
     iconboxes["disk_usage"],
