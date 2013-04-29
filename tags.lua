@@ -8,7 +8,7 @@ tag_list = {
         },
     rss =
         { name = "rss",     hotkey = "r",   layout = awful.layout.suit.max,         comment="RSS reader", 
-            icon="/usr/share/icons/AwOken/clear/128x128/apps/rss.png" },
+            icon= DIRS["home"] .. "/icons/rss-icon.png" },
     music = 
         { name = "music",   hotkey = "m",   layout = awful.layout.suit.max,         comment="Music player", 
             icon= DIRS["home"] .. "/icons/music-guitar.png"},
@@ -43,10 +43,10 @@ tag_list = {
             icon= DIRS["home"] .. "/icons/arch.png"},
     pdf = 
         { name = "pdf",     hotkey = "f",   layout = awful.layout.suit.max,         comment = "PDF documents", 
-            icon= "/usr/share/icons/AwOkenWhite/clear/128x128/mimetypes/pdf.png"},
+            icon= DIRS["home"] .. "/icons/PDF-icon.png"},
     wine = 
         { name = "wine",    hotkey = "i",   layout = awful.layout.suit.float,       comment = "Wine applications", 
-            icon=icondir .. "apps/wine.png" },
+            icon= DIRS["home"] .. "/icons/wine-icon.png"},
 }
 
 tags = {}
