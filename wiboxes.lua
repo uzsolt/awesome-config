@@ -62,6 +62,7 @@ for _,i in ipairs {
     sublayouts["net"],
     space,
     sublayouts["tag_task_list"],
+    textboxes["mpd"]
 } do
     top_layout:add(i)
 end
