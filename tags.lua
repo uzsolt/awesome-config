@@ -37,7 +37,8 @@ tag_list = {
         { name = "devel",     hotkey = "v",   layout = awful.layout.suit.max,        comment="Program developing", 
             icon= DIRS["home"] .. "/icons/geek-zombie-icon.png"         },
     pld =
-        { name = "pld",     hotkey = "l",   layout = awful.layout.suit.magnifier,   comment="PLD developing", icon="hacker-mini.png"},
+        { name = "pld",     hotkey = "l",   layout = awful.layout.suit.magnifier,   comment="PLD developing", 
+        icon=DIRS["home"] .. "/awesome-resources/icons/tags/hacker-mini.png"},
     arch =
         { name = "arch",    hotkey = "a",   layout = awful.layout.suit.tile.right,         comment="Arch developing", 
             icon= DIRS["home"] .. "/icons/arch.png"},
