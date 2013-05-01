@@ -152,13 +152,16 @@ vicious.register(textboxes["battery"],vicious.widgets.bat, function (widget, arg
         s = ""
     end
 
-    local infix = ""
+    local charge = DIRS["home"] .. "/icons/battery/battery_"
     if string.find(s,"1") then
-        infix = "-charging"
+        charge = charge .. "power"
         color="grey"
+    else
+        charge = charge .. "empty"
     end
+    iconboxes["battery_charge"]:set_image(charge .. ".png")
 
-    img_path = icondir .. "/status/battery-" .. (string.format("%.3d",math.floor(args[2]/20)*20)) .. infix .. ".png"
+    img_path = DIRS["home"] .. "/icons/battery/battery_" .. math.floor(args[2]/12) .. ".png"
     if (args[2]<20) and (infix=="") then
         blinking(textboxes["battery"])
     else
