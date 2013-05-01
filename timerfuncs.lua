@@ -5,15 +5,13 @@ emails = {}
 unread_rss = 0
 
 function check_alert() 
-    local dir
+    local img
     if (#emails+#update_packs+unread_rss>0) then
-        dir = "AwOkenWhite"
+        img = DIRS["home"] .. "/icons/iconboxes/alert-icon.png"
     else
-        dir = "AwOken"
+        img = DIRS["home"] .. "/icons/iconboxes/info.png"
     end
-    iconboxes["top"]:set_image(ib_Image(
-        "/usr/share/icons/" .. dir .. "/clear/24x24/apps/htop.png"
-    ))
+    iconboxes["top"]:set_image(img)
 end
 
 function hook_network ()
