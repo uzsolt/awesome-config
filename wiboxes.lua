@@ -71,8 +71,9 @@ wiboxes["top"]:set_widget(top_layout)
 wiboxes["userdata"] = awful.wibox(
     {
         position="top",
-        height=20,
+        height=25,
         width=1366,
+        bg = "#000000bb"
     }
 )
 wiboxes["userdata"].visible = false
