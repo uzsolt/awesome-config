@@ -156,7 +156,7 @@ iconbox_data = {
         image = DIRS["home"] .. "/icons/iconboxes/upload.png"
     },
     ["disk_usage"] = {
-        image = ib_Image(icondir .. "/devices/drive-harddisk-root.png")
+        image = DIRS["home"] .. "/icons/iconboxes/Filesystems-hd-linux-icon.png"
     },
     ["rss"] = {
         image = ib_Image(DIRS["home"] .. "/icons/iconboxes/RSS-icon.png")
@@ -167,7 +167,7 @@ iconbox_data = {
     },
     ]]
     ["uptime"] = {
-        image = ib_Image(icondir .. "apps/workrave.png")
+        image = DIRS["home"] .. "/icons/iconboxes/It-Infrastructure-Linux-client-icon.png"
     },
     --[[
     ["date"] = {
