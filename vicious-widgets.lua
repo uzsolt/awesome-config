@@ -129,15 +129,17 @@ end
 -- swap and memory
 vicious.register(textboxes["mem"],vicious.widgets.mem,'$1%',5)
 
---[[
 vicious.register(textboxes["mpd"],vicious.widgets.mpd,
     function (widget,args)
-        if args["{state}"] == "Stop" then return "Stopped." else
-            return args["{Artist}"] .. " - " .. args["{Title}"]
+        local ret = ""
+        if args["{state}"] ~= "Stop" then 
+            ret = ret .. args["{Artist}"] .. " - " .. args["{Title}"]
         end
+        if args["{state}"] == "Pause" then ret = " [[ " .. ret .. " ]]" end
+        ret = "<span color='black'>" .. ret .. "</span>"
+        return ret
     end,1
 )
-]]
 
 blinking_battery = 0
 vicious.register(textboxes["battery"],vicious.widgets.bat, function (widget, args)
