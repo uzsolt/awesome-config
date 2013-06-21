@@ -110,7 +110,7 @@ awful.rules.rules = {
             },
         },
         except_any = {
-            name = {"Developer Tools.*"}
+            name = {".*(Privát böngészés)"}
         },
         properties = { tag = tags["web"] }
     },
