@@ -157,7 +157,6 @@ end
 image_not_mounted = "Folder-Unavailable-Folder-icon.png"
 ownfiles = { 
     "background",
-    "taskwarrior",
     "tags",
     "hooks",
     "keybindings",
