@@ -56,17 +56,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Control" }, "k", function () awful.screen.focus(-1) end),
     awful.key({ modkey }, "Tab", function () awful.client.focus.byidx(1); 
         if client.focus then client.focus:raise() end end),
-    awful.key({ modkey, "Shift" }, "Tab", function () awful.client.focus.byidx(-1); 
-        if client.focus then client.focus:raise() end end),
-    awful.key({modkey},"s", function()
-        menu = {}
-        menu = awful.util.table.join(menu,
-        {{"teszt",function() naughty.notify({text="próba"}) end}}
-        )
-        menu = awful.util.table.join(menu,
-        {{"próba",function() naughty.notify({text="próba-teszt"}) end}}
-        )
-        awful.menu({items=menu}):show()
+    awful.key({ modkey, "Shift" }, "Tab", function () 
+        awful.client.focus.byidx(-1); 
+        if client.focus then client.focus:raise() end
     end)
 )
 
@@ -95,7 +87,7 @@ keychains.init(globalkeys,
     -- awesome
     keychains.add({winkey},"a","Utils",DIRS["icons"] .. "/keychains/utils.png",{
         c   =   {
-            func    =   aw_calculator,
+            func    =   function() awful.util.spawn("/usr/bin/speedcrunch") end,
             info    =   "Calculator"
         },
         t   =   {
@@ -113,7 +105,7 @@ keychains.init(globalkeys,
     })
 
     -- chromium
-    keychains.add({winkey},"c","Web pages",DIRS["icons"] .. "/keychains/internet.png",{
+    keychains.add({winkey},"w","Web pages",DIRS["icons"] .. "/keychains/internet.png",{
         g   =   {
             func    =   function()
                 open_url("https://mail.google.com/mail/u/0/#search/l%3Aunread")
@@ -252,5 +244,5 @@ keychains.init(globalkeys,
         t   =   urxvt_key("torrent","Transmission","transmission-remote-cli")
     },"menu")
 
-keychains.start()
+keychains.start(5)
 
