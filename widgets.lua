@@ -66,10 +66,10 @@ textbox_data = {
         width = 35,
     },
     ["net_down"] = {
-        width = 35,
+        width = 55,
     },
     ["net_up"] = {
-        width = 35,
+        width = 55,
     },
     ["disk_usage"] = {
         width = 1000,
